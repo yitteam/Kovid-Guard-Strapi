@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": "blog\n"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Content": {
+      "required": true,
+      "type": "text"
+    },
+    "author": {
+      "model": "user",
+      "via": "articles",
+      "plugin": "users-permissions"
+    },
+    "featuredimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

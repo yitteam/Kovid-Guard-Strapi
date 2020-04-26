@@ -1,0 +1,54 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^18.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "@sindresorhus/slugify": "^0.11.0",
+    "knex": "latest",
+    "lodash": "^4.17.5",
+    "sqlite3": "4.1.1",
+    "strapi": "3.0.0-alpha.26.2",
+    "strapi-hook-bookshelf": "3.0.0-alpha.26.2",
+    "strapi-hook-knex": "3.0.0-alpha.26.2",
+    "strapi-utils": "3.0.0-alpha.26.2"
+  },
+  "author": {
+    "name": "ngocanhnckh",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "ngocanhnckh",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "packageManager": "npm",
+    "uuid": "1201443c-4725-4607-9547-293e6b7805a0"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}
