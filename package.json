@@ -23,7 +23,7 @@
     "@ckeditor/ckeditor5-react": "^2.1.0",
     "@sindresorhus/slugify": "^0.11.0",
     "knex": "latest",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "sqlite3": "4.1.1",
     "strapi": "3.0.0-alpha.26.2",
     "strapi-hook-bookshelf": "3.0.0-alpha.26.2",
